@@ -17,13 +17,49 @@ A simple PHP & MySQL-powered guestbook application that allows users to submit a
 - ✅ PHP
 - ✅ MySQL
 - ✅ HTML/CSS
-- ✅ XAMPP (for local development/testing)
-
-## 🚀 How to Run Locally
+- ✅ XAMPP (for local development/testing)🚀 How to Run Locally
 
 ✅ Prerequisites
 
-XAMPP or any local PHP + MySQL environment
+XAMPP or any PHP + MySQL environment
 
-Web browser (like Chrome)
+A web browser (e.g., Chrome, Firefox)
 
+
+⚙ Steps to Run
+
+1. Clone this repository:
+
+git clone https://github.com/PreetySinha84/PHP-guestbook-App.git
+
+
+2. Copy the project folder to:
+
+C:\xampp\htdocs\
+
+
+3. Start Apache and MySQL from the XAMPP control panel.
+
+
+4. Open phpMyAdmin and create a new database:
+
+CREATE DATABASE guestbook;
+
+USE guestbook;
+
+CREATE TABLE messages (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    message TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+5. Open your browser and visit:
+
+http://localhost/guestbook_2/
+
+# 👩‍💻 Author
+
+- *Preety Sinha*
+- GitHub: [@PreetySinha84](https://github.com/PreetySinha84)
